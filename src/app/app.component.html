@@ -1,4 +1,9 @@
 <h1>
   {{title}}
 </h1>
-<app-databinding></app-databinding>
+
+  <button (click)="showData()">Show Data Binding</button>
+  <app-databinding *ngIf="showDataBinding"></app-databinding><br>
+
+  <button (click)="showLifecycle()">Show lifecycle (console logged)</button>
+  <app-lifecycle *ngIf="showLife">{{ test }}<app-lifecycle>

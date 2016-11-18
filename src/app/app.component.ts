@@ -6,5 +6,17 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Welcome to the Thunderdome';
+  title: string = 'Welcome to the Thunderdome';
+  showDataBinding: boolean = false;
+  showLife: boolean = false;
+
+  test: string = "Lifecycle";
+
+  showData() {
+    this.showDataBinding = !this.showDataBinding;
+  }
+
+  showLifecycle() {
+    this.showLife = !this.showLife;
+  }
 }
